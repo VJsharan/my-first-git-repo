@@ -1,4 +1,5 @@
-#username and password generator in python
+"""this is my first ever mini mini, extremely tiny project and this is a 
+username and password generator in python"""
 import string
 import random
 
