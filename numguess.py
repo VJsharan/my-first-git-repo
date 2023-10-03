@@ -1,3 +1,4 @@
+#this is a program to guess a number using python, it also gives the no. of tries and % of you being correct
 import random
 num=random.randint(0,9)
 #redo:
