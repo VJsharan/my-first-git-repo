@@ -12,6 +12,7 @@ def game():
         print("Tied!")
     elif user=="rock":
         if pc == "scissor":
+            print(f"Computer chose {pc}!")
             print("You Win!")
             you+=1
         else:
@@ -19,6 +20,7 @@ def game():
             cpu += 1
     elif user=="paper":
         if pc=="rock":
+            print(f"Computer chose {pc}!")
             print("You Win")
             you += 1
         else:
@@ -26,18 +28,19 @@ def game():
             cpu += 1
     elif user=="scissor":
             if(pc=="paper"):
+                print(f"Computer chose {pc}!")
                 print("you win")
                 you += 1
             else:
+                print("Computer chose rock!")
                 print("pc wins")
                 cpu+=1
     if you>cpu:
         return print(f"Your score is {you}")
     else:
         return print(f"PC's score is {cpu}")
-game()
-y=input("Do you want to play again?")
-if(y.lower()=="yes"):
+y=input("Do you want to play? ")
+while(y.lower()=="yes" or y.lower()=="yepp"):
     game()
 else:
     print("Ok program quitted")
